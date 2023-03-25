@@ -1,0 +1,8 @@
+{
+    "parameters":{
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/ashijainblogs",
+        "prod_uri" : "mysql://root:@localhost/ashijainblogs",
+        "blog_name": "Ashi jain Blogs"
+    }
+}

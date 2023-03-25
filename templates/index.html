@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">ASHI JAIN BLOGS</a>
+    <a   class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="../templates/about.html">ABOUT</a>
+    <a  class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="../templates/blogs.html">BLOGS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div> -->
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/static/Holographic-Minimalist-Daily-Vlog-Youtube-Thumbnail.svg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/static/image.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/static/image%20copy.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+  <!-- The  Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">MY NICHE</h2>
+    <p class="w3-opacity"><i>I Love Writing</i></p>
+    <!--               my niche -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+    
+      <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </symbol>
+    
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+    
+      <symbol id="check2-circle" viewBox="0 0 16 16">
+        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+      </symbol>
+    
+      <symbol id="bookmark-star" viewBox="0 0 16 16">
+        <path d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.178.178 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.178.178 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.178.178 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.178.178 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.178.178 0 0 0 .134-.098L7.84 4.1z"/>
+        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+      </symbol>
+    
+      <symbol id="grid-fill" viewBox="0 0 16 16">
+        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+      </symbol>
+    
+      <symbol id="stars" viewBox="0 0 16 16">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+      </symbol>
+    
+      <symbol id="film" viewBox="0 0 16 16">
+        <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+      </symbol>
+    
+      <symbol id="github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </symbol>
+    
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+    
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+    </svg>
+    
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/modals/">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal modal-tour position-static d-block  py-5" tabindex="-1" role="dialog" id="modalTour">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-6 shadow">
+          <div class="modal-body p-5">
+            <!--<h2 class="fw-bold mb-0">What's my niche</h2>-->
+    
+            <ul class="d-grid gap-4 my-5 list-unstyled">
+              <li class="d-flex gap-4">
+                <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div>
+                  <h5 class="mb-0">Education</h5>
+                   Articles, resources, and tips on learning, training, and skills development.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                <div>
+                  <h5 class="mb-0">Health</h5>
+                  Insights, news, and advice on physical, mental, and emotional wellness, healthcare, and nutrition.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                <div>
+                  <h5 class="mb-0">Beauty</h5>
+                  Tips, tutorials, and product recommendations on makeup, skincare, hair care, and personal grooming.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                <div>
+                  <h5 class="mb-0">travel</h5>
+                  Guides, reviews, and recommendations on destinations, attractions, accommodations, and travel experiences.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-primary flex-shrink-0" width="48" height="48"><use xlink:href="#film"></use></svg>
+                <div>
+                  <h5 class="mb-0">Home & Garden</h5>
+                  Ideas, DIY projects, and product reviews on home decor, gardening, home improvement, and household appliances.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                <div>
+                  <h5 class="mb-0">Marketing</h5>
+                  Insights, tips, and strategies on digital marketing, social media, branding, and advertising.
+    
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                <div>
+                  <h5 class="mb-0">Lifestyle</h5>
+                  Articles, tips, and ideas on personal development, relationships, entertainment, and leisure activities.
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Click to visit Blogs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--               my niche -->
+
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">GENRE</h2>
+      <p class="w3-opacity w3-center"><i>Remember to see!</i></p><br>
+
+      <section  class="text-center text-bg-light" >
+        <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/1489798288.svg" class="img-fluid" alt="Image">
+          </div>
+          <div class="col-md-6">
+            <h2></h2>
+            <br><br><br><br><br>
+            <p>"Explore our education blog for informative and engaging articles on teaching, learning, and educational innovation."</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <style>
+        .section {
+          background-color: #f8f9fa;
+          padding: 50px 0;
+        }
+      </style>
+      </section>
+
+
+      <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2></h2>
+            <br><br><br><br><br>
+            <p>"Discover our health blog for expert insights, tips, and news on everything from nutrition and fitness to mental health and wellness."</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/static/pitr_First_aid_icon.svg" class="img-fluid" alt="Image">
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .section {
+          background-color: #ff9999;
+          color: white;
+          padding: 50px 0;
+        }
+        .section h2, .section p {
+          color: white;
+        }
+      </style>
+    </section>
+
+    <section  class="text-center text-bg-light" >
+        <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/Makeup.svg" class="img-fluid" alt="Image">
+          </div>
+          <div class="col-md-6">
+            <h2></h2>
+            <br><br><br><br><br>
+            <p>Explore our beauty blog for the latest trends, tips, and product reviews to help you look and feel your best.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <style>
+        .section {
+          background-color: #f8f9fa;
+          padding: 50px 0;
+        }
+      </style>
+      </section>
+
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2></h2>
+              <br><br><br><br><br><br><br><br><br><br>
+              <p>Get inspired to explore the world with our travel blog, featuring destination guides, travel tips, and stories from around the globe.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="/static/Travel-Suitcase.svg" class="img-fluid" alt="Image">
+            </div>
+          </div>
+        </div>
+        
+        <style>
+          .section {
+            background-color: #ff9999;
+            color: white;
+            padding: 50px 0;
+          }
+          .section h2, .section p {
+            color: white;
+          }
+        </style>
+      </section>
+
+      <section  class="text-center text-bg-light" >
+        <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/harvestable-resources-garden-new.svg" class="img-fluid" alt="Image">
+          </div>
+          <div class="col-md-6">
+            <h2></h2>
+            <br><br><br><br><br>
+            <p>Transform your living space with our home & garden blog, featuring ideas, DIY projects, and expert advice for creating the perfect home.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <style>
+        .section {
+          background-color: #f8f9fa;
+          padding: 50px 0;
+        }
+      </style>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2></h2>
+              <br><br><br><br><br><br><br>
+              <p>Stay ahead of the game with our marketing blog, featuring insights, strategies, and trends to help you elevate your brand and grow your business.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="/static/1614247066sale-storefront-poster.svg" class="img-fluid" alt="Image">
+            </div>
+          </div>
+        </div>
+        
+        <style>
+          .section {
+            background-color: #ff9999;
+            color: white;
+            padding: 50px 0;
+          }
+          .section h2, .section p {
+            color: white;
+          }
+        </style>
+      </section>
+
+      <section  class="text-center text-bg-light" >
+        <br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/static/1540707724.svg" class="img-fluid" alt="Image">
+          </div>
+          <div class="col-md-6">
+            <h2></h2>
+            <br><br><br><br><br>
+            <p>Find inspiration for living your best life with our lifestyle blog, covering health, wellness, relationships, and more.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <style>
+        .section {
+          background-color: #f8f9fa;
+          padding: 50px 0;
+        }
+      </style>
+      </section>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> DELHI, INDIA<br>
+        <!--<i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>-->
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: jainashi49@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<!--other blogs -->
+<div class="card text-bg-dark text-center">
+  <br><br><br><br>
+  <h2></h2>
+  <h1 class="w3-wide w3-center" >look at some of my other blogs </h1>
+  <br><br><br>
+
+  <div class="row">
+      <!-- <a  class="btn btn-dark" href="https://linktr.ee/readwithashi">link tree</a> -->
+      <u class="text-center">
+      <a  class="btn btn-secondary " href="https://vocal.media/families/how-to-decorate-your-home-for-christmas?utm_source=Iterable&utm_medium=email&utm_campaign=">Vocal media</a>
+
+  
+      <a  class="btn btn-danger" href="https://acousticpost.com/ivf-treatment/">acoustic Post</a>
+
+  
+      <a  class="btn btn-warning" href="https://www.reddit.com/user/ashi_jain25/comments/zfp6pd/best_video_game_accessories_which_you_must_buy_to/">Reddit</a>
+  
+      <!-- <a  class="btn btn-info" href="https://www.bookmybharat.com/pages/blog/plan-your-enticing-honeymoon-packages">Ghost writer</a> -->
+
+  
+      <!-- <a  class="btn btn-warning" href="https://fertilityzilla.com/blog/female-infertility-and-ivf/">Fertility zilla</a> -->
+      
+
+  
+      <a  class="btn btn-success" href="https://jainashi49.blogspot.com/2022/01/how-to-use-social-media-platform.html">Blogger</a>
+
+  
+      <a  class="btn btn-secondary" href="https://medium.com/@jainashi49/how-to-grow-traffic-on-your-website-organically-ce1422031a0e">Medium</a>
+    </u>
+    </div>
+    <br><br><br><br><br>
+  
+</div>
+
+
+<!-- Footer -->
+<section id="contact" >
+        
+
+  <div class="contact-section">
+    
+    <div class="container mt-5">
+        
+
+          
+         
+        </div>
+        <br><br>
+      </div>
+
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blogs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collab</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-3 text-center">
+              <h5>CONTACT @</h5>
+              <a class="btn btn-dark btn-sm" href="">messanger</a><br><br>
+              
+                  <h3>Reach out to me</h3>
+                  <a class="btn btn-info btn-sm" href="mailto:jainashi49@gmail.com?subject=new%20mail%20for%20the%20website&body=name%0D%0A%0D%0Aemail%0D%0A%0D%0Amessage">THROUGH EMAIL</a>
+      
+      <br><br>
+                
+              <ul class="nav flex-column">
+                  
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">email@</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">jainashi49@gmail.com</a></li>
+                
+              </ul>
+            </div>
+      
+            
+            
+      
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+              
+      
+            <p>© 2021 Company, Inc. All rights reserved.</p>
+            <p>ASHI JAIN BLOGS</p>
+                      <p>DELHI, INDIA</p>
+            <ul class="list-unstyled d-flex">
+           
+      
+      <!-- Twitter icon -->
+      <div class="icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+            </ul>
+          </div>
+        </footer>
+      </div>
+  
+  <style>
+    .contact-section {
+      background-color: #f2f2f2;
+      padding: 50px;
+      text-align: center;
+    }
+    .contact-section h2 {
+      margin-bottom: 20px;
+    }
+    
+  </style>
+
+
+  
+  
+  
+
+
+</section>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
+
